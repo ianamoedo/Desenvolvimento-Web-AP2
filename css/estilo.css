@@ -1,0 +1,45 @@
+#lista_imagens_elenco_feminino, #lista_imagens_elenco_masculino{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*6 jogadores na linha..*/
+    width: 1200px; /* estabelecido pelo professor nas restricoes de largura.. */
+}
+
+body{
+    color: black;
+    background-color: gray;
+    font-family: 'Serif';
+    margin: 5px auto;
+    text-align: center;
+}
+
+h1, h2{
+
+
+    position: sticky; /*o local do elemento sera relativo ate que, ultrapasse os limites do blog da pagina..*/
+}
+
+
+
+/*media queries*/
+@media (max-width : 1024px) { /*estabelecido pelo professor nas restricoes de colunas..*/
+    #lista_imagens_elenco_feminino, #lista_imagens_elenco_masculino{
+        grid-template-columns : 1fr 1fr 1fr 1fr; /*4 jogadores na linha..*/
+        width: fit-content;
+    }
+}
+
+@media (max-width : 800px) { /*2 jogadores na linha: 1fr 1fr..*/
+    #lista_imagens_elenco_feminino, #lista_imagens_elenco_masculino{
+        font-size : 15pt;
+        grid-template-columns : 1fr 1fr;    
+        width: fit-content;
+    }
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@400;600&display=swap');
+
